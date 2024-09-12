@@ -53,6 +53,8 @@ const store = MongoStore.create({
     }
 });
 
+console.log(dbUrl);
+
 store.on("error", function (e) {
     console.log("SESSION STORE ERROR", e)
 })
